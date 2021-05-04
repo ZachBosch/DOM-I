@@ -100,4 +100,11 @@ btmContent5.children[1].textContent = siteContent["main-content"]["vision-conten
 
 //contact
 const contactInfo = document.querySelector(".contact");
-contactInfo.textContent = siteContent["contact"];
+contactInfo.children[0].textContent = siteContent["contact"]["contact-h4"];
+contactInfo.children[1].textContent = siteContent["contact"]["address"];
+contactInfo.children[2].textContent = siteContent["contact"]["phone"];
+contactInfo.children[3].textContent = siteContent["contact"]["email"];
+
+//footer
+const footer = document.querySelector('footer p');
+footer.textContent = siteContent["footer"]["copyright"];

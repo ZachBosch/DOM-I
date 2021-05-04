@@ -52,33 +52,52 @@ fixTitle.textContent = "Great Idea!";
 
 //NAV
 const navLinks = document.querySelector("nav");
-navLinks.children[0].textContent = "Services";
-navLinks.children[1].textContent = "Product";
-navLinks.children[2].textContent = "Vision";
-navLinks.children[3].textContent = "Features";
-navLinks.children[4].textContent = "About";
-navLinks.children[5].textContent = "Contact";
+navLinks.children[0].textContent = siteContent["nav"]["nav-item-1"];
+navLinks.children[1].textContent = siteContent["nav"]["nav-item-2"];
+navLinks.children[2].textContent = siteContent["nav"]["nav-item-3"];
+navLinks.children[3].textContent = siteContent["nav"]["nav-item-4"];
+navLinks.children[4].textContent = siteContent["nav"]["nav-item-5"];
+navLinks.children[5].textContent = siteContent["nav"]["nav-item-6"];
 
-//NAV ALTERNATE
-// const a1 = document.querySelector("a:nth-of-type(1)");
-// a1.textContent = "Services";
-// const a2 = document.querySelector("a:nth-of-type(2)");
-// a2.textContent = "Product";
-// const a3 = document.querySelector("a:nth-of-type(3)");
-// a3.textContent = "Vision";
-// const a4 = document.querySelector("a:nth-of-type(4)");
-// a4.textContent = "Features";
-// const a5 = document.querySelector("a:nth-of-type(5)");
-// a5.textContent = "About";
-// const a6 = document.querySelector("a:nth-of-type(6)");
-// a6.textContent = "Contact";
 
+//Header Image
 const fixImage = document.querySelector("#cta-img");
 fixImage.src = "img/header-img.png";
 console.log(fixImage);
 
+//DOM Line Breaks
 const h1 = document.querySelector("h1");
 h1.innerText = "DOM \nIs \nAwesome";
 
-// const h1Title = document.querySelector("h1");
-// h1Title.innerText = siteContent["cta"]["h1"];
+//button text
+const btn = document.querySelector("button");
+btn.innerText = "Get Started";
+
+//middle-image
+const middleImage = document.querySelector('#middle-img');
+middleImage.src = siteContent["main-content"]["middle-img-src"];
+
+//body paragraphs
+const topContent1 = document.querySelector('.top-content div:nth-of-type(1)');
+topContent1.children[0].textContent = siteContent["main-content"]["features-h4"];
+topContent1.children[1].textContent = siteContent["main-content"]["features-content"];
+
+const topContent2 = document.querySelector('.top-content div:nth-of-type(2)');
+topContent2.children[0].textContent = siteContent["main-content"]["about-h4"];
+topContent2.children[1].textContent = siteContent["main-content"]["about-content"];
+
+const btmContent3 = document.querySelector('.bottom-content div:nth-of-type(1)');
+btmContent3.children[0].textContent = siteContent["main-content"]["services-h4"];
+btmContent3.children[1].textContent = siteContent["main-content"]["services-content"];
+
+const btmContent4 = document.querySelector('.bottom-content div:nth-of-type(2)');
+btmContent4.children[0].textContent = siteContent["main-content"]["product-h4"];
+btmContent4.children[1].textContent = siteContent["main-content"]["product-content"];
+
+const btmContent5 = document.querySelector('.bottom-content div:nth-of-type(3)');
+btmContent5.children[0].textContent = siteContent["main-content"]["vision-h4"];
+btmContent5.children[1].textContent = siteContent["main-content"]["vision-content"];
+
+//contact
+const contactInfo = document.querySelector(".contact");
+contactInfo.textContent = siteContent["contact"];
